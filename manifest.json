@@ -1,0 +1,12 @@
+{
+  "name": "Chrome POST",
+  "version": "0.1",
+  "background": { "scripts": ["background.js"] },
+  "permissions": [
+    "tabs", "*://*/*"
+  ],
+  "browser_action": {
+      "name": "Chrome POST"
+  },
+  "manifest_version": 2
+}
