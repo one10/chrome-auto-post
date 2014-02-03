@@ -74,8 +74,8 @@ function parseVals() {
         if (xhr.responseText)
             vals = xhr.responseText.trim().split('\n');
         
-        if (!xhr.responseText || !urlJson || urlJson.urls.length == 0) {
-            alert("Error loading the URL JSON, extension not running");
+        if (!xhr.responseText || !vals || vals.length < 1) {
+            alert("Error loading the values file, extension not running");
             isRunning = 0;
         }
         else {
